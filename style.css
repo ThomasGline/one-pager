@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "ArchivoBlack-Regular";
+    src: url("police/ArchivoBlack-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "KumbhSans-Regular";
+    src: url("police/KumbhSans-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "LibreBaskerville-Italic";
+    src: url("police/LibreBaskerville-Italic.ttf") format("truetype");
+}
+h1{
+    color: #0077ff;
+    font-family: "ArchivoBlack-Regular";
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position-x: 22%;
+    background-position-y: 92%;
+    text-align: center;
+    font-size: 5em;
+    margin-top: -8px;
+    padding-left: 5%;
+    padding-top: 2.5em;
+    padding-bottom: 0.50em;
+}
+body{
+    font-family: "KumbhSans-Regular";
+    text-align: justify;
+    line-height: 1.5em;
+}
+footer{
+    font-family: "KumbhSans-Regular";
+}
+#image{
+    background-image: url(images/pauvrete.jpg);
+    background-position: center;
+    width: auto;
+    height: 500px;
+    margin-top: -1.45%;
+}
+.link{
+    text-decoration: none;
+    color: blue;
+}
+.linkreseau{
+    text-decoration: none;
+    color: #F4F4F4;
+}
+.hr1{
+    margin-top: -15px;
+    height: 0.1px;
+}
+.hr2{
+    height: 0.1px;
+}
+table{
+    background-color: #575757;
+    text-align: center;
+}
+.cite{
+    text-align: center;
+}
+.assos{
+    text-align: center;
+}
+.facebook{
+    width: 100px;
+    height: 24px;
+    background-image: url(images/facebook.png);
+    background-position-x: 75px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.twitter{
+    width: 100px;
+    height: 24px;
+    background-image: url(images/twitter.png);
+    background-position-x: 75px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+/*******************************/
+/***********CITATION************/
+blockquote{
+    font-family: "LibreBaskerville-Italic";
+    background-image: url(images/guillemet.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    background-size: 5%;
+}
+q{
+    padding-left: 50px;
+    quotes: none;
+}
+/*******************************/
+/**************BOX**************/
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+
+}
+.box1{
+    background-color: #F4F4F4;
+    color: #575757;
+    width: 60%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 1.5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box2{
+    background-color: #575757;
+    color: #F4F4F4;
+    width: 60%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 1.5%;
+    align-self: flex-end;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.box3{
+    background-color: #F4F4F4;
+    color: #575757;
+    width: 60%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 1.5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box4{
+    background-color: white;
+    align-self: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+.box5{
+    background-color: #F4F4F4;
+    color: #575757;
+    align-self: center;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 1.5%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+/*******************************/
+/*************BOXf**************/
+#boxf{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #575757;
+    color: #F4F4F4;
+    font-size: 80%;
+    justify-content: space-around;
+    line-height: 1.5em;
+}
