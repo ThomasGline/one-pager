@@ -10,7 +10,7 @@
     font-family: "LibreBaskerville-Italic";
     src: url("police/LibreBaskerville-Italic.ttf") format("truetype");
 }
-h1{
+/*h1{
     color: #0077ff;
     font-family: "ArchivoBlack-Regular";
     background-image: url(images/logo.png);
@@ -24,6 +24,12 @@ h1{
     padding-left: 5%;
     padding-top: 2.5em;
     padding-bottom: 0.50em;
+}*/
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    padding-top: 3%;
 }
 body{
     font-family: "KumbhSans-Regular";
@@ -56,8 +62,13 @@ footer{
     height: 0.1px;
 }
 table{
-    background-color: #575757;
-    text-align: center;
+    background-color: #ffffff;
+}
+.td1{
+    padding-right: 17%;
+}
+.td2{
+    padding-right: 17%;
 }
 .cite{
     text-align: center;
@@ -149,7 +160,7 @@ q{
     font-size: 20px;
 }
 .box5{
-    background-color: #F4F4F4;
+    background-color: #ffffff;
     color: #575757;
     align-self: center;
     width: 95%;
