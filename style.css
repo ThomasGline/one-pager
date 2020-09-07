@@ -81,6 +81,11 @@ table{
     background-repeat: no-repeat;
     vertical-align: middle;
 }
+.source{
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
 /*******************************/
 /***********CITATION************/
 blockquote{
@@ -165,4 +170,9 @@ q{
     font-size: 80%;
     justify-content: space-around;
     line-height: 1.5em;
+}
+.video{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1.5%;
 }
