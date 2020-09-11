@@ -1,0 +1,49 @@
+/**************FONTS************/
+@import url(box.css);
+@font-face {
+  font-family: "ArchivoBlack-Regular";
+  src: url("../police/ArchivoBlack-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "KumbhSans-Regular";
+  src: url("../police/KumbhSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "LibreBaskerville-Italic";
+  src: url("../police/LibreBaskerville-Italic.ttf") format("truetype"); }
+/*******************************/
+/***********VARIABLES***********/
+/*******************************/
+/*******************************/
+body {
+  font-family: "KumbhSans-Regular";
+  text-align: justify;
+  line-height: 1.5em; }
+
+#image {
+  background-image: url(../images/pauvrete.jpg);
+  background-position: center;
+  width: auto;
+  height: 500px;
+  margin-top: -1.45%; }
+  #image .logo {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    padding-top: 3%; }
+
+.link {
+  text-decoration: none;
+  color: blue; }
+
+.video {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1.5%; }
+
+/*******************************/
+/**************BOX**************/
+/*******************************/
+/***********TABLEAU*************/
+table {
+  background-color: #ffffff; }
+  table .td1, table .td2 {
+    padding-right: 17%; }

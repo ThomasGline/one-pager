@@ -1,0 +1,69 @@
+/**************FONTS************/
+@font-face {
+    font-family: "ArchivoBlack-Regular";
+    src: url("../police/ArchivoBlack-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "KumbhSans-Regular";
+    src: url("../police/KumbhSans-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "LibreBaskerville-Italic";
+    src: url("../police/LibreBaskerville-Italic.ttf") format("truetype");
+}
+/*******************************/
+/***********VARIABLES***********/
+
+$light-grey: #F4F4F4;
+$dark-gray: #575757;
+$blue: blue;
+$white: #ffffff;
+$P-B: (3 / 2)* 1%;
+
+/*******************************/
+/*******************************/
+
+body{
+    font-family: "KumbhSans-Regular";
+    text-align: justify;
+    line-height: (24 / 16)* 1em;
+}
+#image{
+    background-image: url(../images/pauvrete.jpg);
+    background-position: center;
+    width: auto;
+    height: 500px;
+    margin-top: -1.45%;
+    .logo{
+        display: block;
+        margin: 0 auto;
+        width: (1 / 4)* 100%;
+        padding-top: 3%;
+    }
+}
+.link{
+    text-decoration: none;
+    color: $blue;
+}
+.video{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: $P-B;
+}
+
+/*******************************/
+/**************BOX**************/
+
+@import 'box.css';
+
+/*******************************/
+/***********TABLEAU*************/
+table{
+    background-color: $white;
+    .td1{
+        padding-right: 17%;
+    }
+    .td2{
+        @extend .td1;
+    }
+}

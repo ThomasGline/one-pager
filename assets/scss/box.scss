@@ -1,0 +1,142 @@
+/**************FONTS************/
+@font-face {
+    font-family: "ArchivoBlack-Regular";
+    src: url("../police/ArchivoBlack-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "KumbhSans-Regular";
+    src: url("../police/KumbhSans-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "LibreBaskerville-Italic";
+    src: url("../police/LibreBaskerville-Italic.ttf") format("truetype");
+}
+/*******************************/
+/***********VARIABLES***********/
+
+$light-grey: #F4F4F4;
+$dark-gray: #575757;
+$blue: blue;
+$white: #ffffff;
+$P-B: (3 / 2)* 1%;
+
+/*******************************/
+/*******************************/
+@mixin base {
+    color: $dark-gray;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: $P-B;
+}
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+}
+.box1{
+    @include base;
+    background-color: $light-grey;
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .hr1{
+        margin-top: -15px;
+        height: 0.1px;
+    }
+}
+.box2{
+    @include base;
+    width: 60%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: $dark-gray;
+    color: $light-grey;
+    align-self: flex-end;
+    .hr1{
+        margin-top: -15px;
+        height: 0.1px;
+    }
+}
+.box3{
+    @extend .box1;
+    .hr1{
+        @extend .hr1;
+    }
+}
+.box4{
+    background-color: $white;
+    align-self: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 20px;
+    blockquote{
+        font-family: "LibreBaskerville-Italic";
+        background-image: url(../images/guillemet.png);
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        padding-top: 2%;
+        padding-bottom: 10%;
+        background-size: 5%;
+        q{
+            padding-left: 50px;
+            quotes: none;
+        }
+        .cite{
+            text-align: center;
+            .source{
+                text-decoration: none;
+                color: $blue;
+                text-align: center;
+            }
+        }
+    }
+}
+.box5{
+    @include base;
+    background-color: $white;
+    align-self: center;
+    width: 95%;
+    text-align: justify;
+    line-height: (24 / 16)* 1em;
+    .hr1{
+        @extend .hr1;
+    }
+    .assos{
+        text-align: center;
+    }
+}
+footer{
+    font-family: "KumbhSans-Regular";
+    #boxf{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: $dark-gray;
+        color: $light-grey;
+        font-size: 80%;
+        justify-content: space-around;
+        line-height: (24 / 16)* 1em;
+        .boxf2{
+            .facebook{
+                width: 100px;
+                height: 24px;
+                background-image: url(../images/facebook.png);
+                background-position-x: 75px;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                .linkreseau{
+                    text-decoration: none;
+                    color: $light-grey;
+                }
+            }
+            .twitter{
+                @extend .facebook;
+                background-image: url(../images/twitter.png);
+                .linkreseau{
+                @extend .linkreseau;
+                }
+            }
+        }
+    }
+}
